@@ -6,3 +6,7 @@ Dinner: Pizza Hut personal pizza
 Breakfast: Toast with Jam
 Lunch: Hot Dogs
 Dinner: Ham Sandwich 
+-Saturday-
+Breakfast: Large Coffee
+Lunch: Chicken Salad Sandwich and Arizona Sweet Tea
+Dinner: Chicken Strips and Ketchup w/ Cherry Coke
