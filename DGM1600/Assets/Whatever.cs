@@ -6,11 +6,13 @@ public class Whatever : MonoBehaviour {
 
         int max = 100;
         int min = 1;
-        int guess = 50;
+        int guess;
+        private int counter;
 
 	// Use this for initialization
 	void Start () {
 
+        guess = Random.Range(min, max);
         max = max + 1;
         print("Welcome to Number Guesser");
         print("Pick a number in your head");
@@ -28,6 +30,7 @@ public class Whatever : MonoBehaviour {
 
             min = guess;
             guess = (max + min) / 2;
+            counter--;
             print("Is the number higher or lower than " + guess);
 
 
@@ -36,15 +39,35 @@ public class Whatever : MonoBehaviour {
         {
             max = guess;
             guess = (max + min) / 2;
+            counter--;
             print("Is the number higher or lower than " + guess);
         }
-        if (Input.GetKeyDown (KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            print("You Win");
+            print("I Win");
+        }
+            if (counter == 0);
+        {
+            //counter--;
+            //print("You Win");
+
+            if (Input.GetKeyDown(KeyCode.Return)) ;
+            {
+                print("I win");
+            }
+            if (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                //counter--;
+                print("You win!");
+            }
+        }
+
+
+            //when counter reaches zero then computer wins
         }
         }
 
-            }
+            
         
 	
 
